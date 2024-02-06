@@ -8,3 +8,23 @@ jobs:
         run: echo "Hello world"
       - name: Print goodbye
         run: echo "Done, bye!"
+
+
+
+
+
+
+#  ------------------------------
+
+# If you need to run multiple shell commands (or multi-line commands, e.g., for readability),
+# you can do so by adding the pipe symbol (|) as a value after the run: key:
+
+# run: |
+#     echo "First output"
+#     echo "Second output"
+
+# That will run both commands in one step, just consider that
+# each run keyword represents a new process and shell in the runner environment.
+# When you provide multi-line commands, each line runs in the same shell.
+
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
